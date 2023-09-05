@@ -19,4 +19,3 @@ This part is used to transfer data from one database to another. For each table 
 ### Data Warehouse
 
 This part is creating a database to track the history of the source BD, and it is different from "t_history" in the ETL pipeline. In this database, all tables from the source database are created with an extra column to track the timestamps of record insertion. Besides this, for each table in the source DB, there is another table to store records of every delete and update action on the source tables. This new database could help us retrieve a snapshot of the source database at any specific time.
-
